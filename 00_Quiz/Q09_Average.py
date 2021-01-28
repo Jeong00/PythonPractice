@@ -14,7 +14,7 @@ f.close()
 average = sum / len(lines)
 
 # result.txt에 저장하기
-f = open("Q9_result.txt", "w")
+f = open("Q09_result.txt", "w")
 f.write(str(average))
 f.close()
 
