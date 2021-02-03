@@ -28,3 +28,16 @@ while i <= n:
 # key
 # 1. 재귀함수의 활용
 # 2. input으로 받은 값을 변수로 설정해 함수의 입력값으로 넣기, 반복문에 앞에서 설정한 변수 사용하기
+
+# 풀이2
+# def fibo(n):
+#     if n == 0:
+#         return 0
+#     elif n == 1:
+#         return 1
+#     if n > 1:
+#         return fibo(n-2) + fibo(n-1)
+
+
+# for i in range(1, 5):
+#     print(fibo(i), end=" ")

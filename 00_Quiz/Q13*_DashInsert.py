@@ -33,3 +33,25 @@ print(DashInsert(4546793))
 # key
 # index 설정
 # result.append() 조건, 위치
+
+
+# 발전
+data = "4546793"
+data = list(data)
+result = []
+
+for i, n in enumerate(data):
+    result.append(n)
+    if i+1 < len(data):
+        is_odd = int(n) % 2 == 1
+        is_next_odd = int(data[i+1]) % 2 == 1
+        if is_odd and is_next_odd:
+            result.append("-")
+        elif not is_odd and not is_next_odd:
+            result.append("*")
+
+print("".join(result))
+
+# key
+# enumerate로 index 대신하기
+# 변수로 깔끔하게 정리하기
